@@ -1,0 +1,366 @@
+* {
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+
+body {
+  background: #161616;
+}
+
+.sec__title {
+  margin-bottom: 23px;
+}
+
+.sec__title h3 {
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #000000;
+  letter-spacing: -1px;
+}
+
+.sec__title h3 span {
+  color: #ffc600;
+  font-size: 50px;
+}
+
+.sec__title h3 span:nth-child(2) {
+  color: black;
+}
+
+.sec__discription .descr__title {
+  color: #1d1d1d;
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.sec__discription .descr__title span {
+  font-size: 16px;
+}
+
+.sec__discription .descr__text {
+  font-size: 13px;
+  color: #595959;
+}
+
+header {
+  background-image: url("../img/bg_img_header.png"), url("../img/bg_col_header.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .container {
+  padding: 130px 0 0;
+}
+
+header .container .sec__wrap h1 {
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 202px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -10px;
+  line-height: 150px;
+}
+
+header .container .sec__wrap h1 span {
+  color: #ffc600;
+}
+
+header .container .sec__wrap p {
+  color: #ffffff;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: normal;
+  text-align: left;
+  width: 390px;
+  margin-bottom: 111px;
+}
+
+header .container .sec__wrap p span {
+  color: #ffc600;
+}
+
+header .container .sec__wrap .navigation {
+  background-image: url("../img/bg_img2_header.png");
+  padding: 70px 46px 418px;
+}
+
+header .container .sec__wrap .navigation h2 {
+  font-family: "Myriad Pro", sans-serif;
+  max-width: 460px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -3px;
+  color: #ffffff;
+  margin-bottom: 60px;
+}
+
+header .container .sec__wrap .navigation h2 span {
+  color: #ffc600;
+}
+
+header .container .sec__wrap .navigation .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+}
+
+header .container .sec__wrap .navigation .menu ul li {
+  list-style: none;
+}
+
+header .container .sec__wrap .navigation .menu ul li a {
+  text-decoration: none;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffc600;
+  position: relative;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header .container .sec__wrap .navigation .menu ul li a:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 0;
+  height: 1px;
+  background: #ffc600;
+  left: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .container .sec__wrap .navigation .menu ul li a:hover {
+  color: white;
+}
+
+header .container .sec__wrap .navigation .menu ul li a:hover:after {
+  width: 100%;
+}
+
+header .container .sec__wrap .navigation .menu ul li:not(:last-child) {
+  margin-right: 35px;
+}
+
+.about {
+  font-family: "Myriad Pro", sans-serif;
+}
+
+.about .container .sec__wrap {
+  background: white;
+  padding-bottom: 111px;
+}
+
+.about .container .sec__wrap .sec__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 36px 3px 72px 133px;
+}
+
+.about .container .sec__wrap .sec__head .sec__title {
+  width: 49%;
+  border-right: 1px solid #c4c4c4;
+  padding: 20px 0;
+}
+
+.about .container .sec__wrap .sec__head .sec__title h3 {
+  color: #717171;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.about .container .sec__wrap .sec__head .sec__title h3 span {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.about .container .sec__wrap .sec__head .sec__title h2 {
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 68px;
+}
+
+.about .container .sec__wrap .sec__head .sec__title h2 span {
+  color: #ffc600;
+}
+
+.about .container .sec__wrap .sec__head .sec__discription {
+  width: 49%;
+}
+
+.about .container .sec__wrap .sec__body .sec__items {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.about .container .sec__wrap .sec__body .sec__items .sec__item {
+  max-width: 235px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.about .container .sec__wrap .sec__body .sec__items .sec__item .item__pic {
+  margin-bottom: 24px;
+}
+
+.about .container .sec__wrap .sec__body .sec__items .sec__item .item_title {
+  color: #000000;
+  font-size: 18px;
+  margin-bottom: 19px;
+}
+
+.about .container .sec__wrap .sec__body .sec__items .sec__item p {
+  color: #000000;
+  font-style: italic;
+  font-size: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.projects .container .sec__wrap {
+  padding: 0 81px 26px;
+  background: white;
+}
+
+.projects .container .sec__wrap .sec__menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: 600;
+  font-size: 9px;
+}
+
+.projects .container .sec__wrap .sec__menu ul li {
+  list-style: none;
+}
+
+.projects .container .sec__wrap .sec__menu ul li a {
+  text-decoration: none;
+  color: #101010;
+  position: relative;
+}
+
+.projects .container .sec__wrap .sec__menu ul li a:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  left: 50%;
+  bottom: -4px;
+  background: #ffc600;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.projects .container .sec__wrap .sec__menu ul li a:hover:after {
+  width: 23px;
+}
+
+.projects .container .sec__wrap .sec__menu ul li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.projects .container .sec__wrap .sec__menu ul li:first-child {
+  margin-right: 35px;
+}
+
+.projects .projects__pics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.projects .projects__pics .projects__pic {
+  width: calc(100% / 4);
+  height: 267px;
+  overflow: hidden;
+}
+
+.projects .projects__pics .projects__pic img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+.projects .projects__pics .projects__pic img:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.strategic .container .sec__wrap {
+  background: white;
+  padding: 65px 65px 65px 79px;
+}
