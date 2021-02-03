@@ -364,3 +364,112 @@ header .container .sec__wrap .navigation .menu ul li:not(:last-child) {
   background: white;
   padding: 65px 65px 65px 79px;
 }
+
+.strategic .container .sec__wrap .sec__discription {
+  margin-bottom: 43px;
+}
+
+.strategic .container .sec__wrap .strategic__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 860px;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.strategic .container .sec__wrap .strategic__items .strategic__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.strategic .container .sec__wrap .strategic__items .strategic__item .item__img {
+  width: 50%;
+}
+
+.strategic .container .sec__wrap .strategic__items .strategic__item .item__img img {
+  width: 100%;
+}
+
+.strategic .container .sec__wrap .strategic__items .strategic__item .item__text {
+  width: 50%;
+  padding: 0 40px;
+}
+
+.strategic .container .sec__wrap .strategic__items .strategic__item:nth-child(even) .item__img {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.strategic .container .sec__wrap .strategic__items .strategic__item:nth-child(even) .item__text {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+.services .container .sec__wrap {
+  padding: 41px 184px 58px 50px;
+  background: url("../img/sec_bg_services.png") center/cover, url("../img/sec_bg_services2.png") center/cover;
+}
+
+.services .container .sec__wrap .sec__title {
+  margin-bottom: 55px;
+}
+
+.services .container .sec__wrap .sec__title h3 {
+  color: white;
+}
+
+.services .container .sec__wrap .sec__title h3 span:nth-child(2) {
+  color: white;
+}
+
+.services .container .sec__wrap .services__items {
+  margin-left: auto;
+  color: white;
+  font-family: "Myriad Pro", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 540px;
+  width: 100%;
+}
+
+.services .container .sec__wrap .services__items .services__item {
+  max-width: 225px;
+}
+
+.services .container .sec__wrap .services__items .services__item h5 {
+  font-size: 18px;
+  margin-bottom: 26px;
+}
+
+.services .container .sec__wrap .services__items .services__item p {
+  font-size: 11px;
+}
+
+.services .container .sec__wrap .services__items .services__item:nth-child(1), .services .container .sec__wrap .services__items .services__item:nth-child(2) {
+  margin-bottom: 75px;
+}
