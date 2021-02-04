@@ -401,10 +401,18 @@ header .container .sec__wrap .navigation .menu ul li:not(:last-child) {
 
 .strategic .container .sec__wrap .strategic__items .strategic__item .item__img {
   width: 50%;
+  overflow: hidden;
 }
 
 .strategic .container .sec__wrap .strategic__items .strategic__item .item__img img {
   width: 100%;
+  -webkit-transition: 4s;
+  transition: 4s;
+}
+
+.strategic .container .sec__wrap .strategic__items .strategic__item .item__img img:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .strategic .container .sec__wrap .strategic__items .strategic__item .item__text {
@@ -472,4 +480,127 @@ header .container .sec__wrap .navigation .menu ul li:not(:last-child) {
 
 .services .container .sec__wrap .services__items .services__item:nth-child(1), .services .container .sec__wrap .services__items .services__item:nth-child(2) {
   margin-bottom: 75px;
+}
+
+.team .container .sec__wrap {
+  background: white;
+  padding: 85px 69px 150px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.team .container .sec__wrap .team__content {
+  width: 782px;
+}
+
+.team .container .sec__wrap .team__content .sec__discription {
+  max-width: 624px;
+  margin-bottom: 35px;
+}
+
+.team .container .sec__wrap .team__content .sec__discription .descr__title {
+  font-size: 16px;
+}
+
+.team .container .sec__wrap .team__content .sec__discription .descr__text {
+  font-size: 14px;
+}
+
+.team .container .sec__wrap .team__content .team__pics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.team .container .sec__wrap .team__content .team__pics .team__pic {
+  text-align: center;
+  font-family: "Myriad Pro", sans-serif;
+  margin-bottom: 16px;
+}
+
+.team .container .sec__wrap .team__content .team__pics .team__pic h5 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.team .container .sec__wrap .team__content .team__pics .team__pic p {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.testimonials .container .sec__wrap {
+  background: black;
+  color: white;
+  padding: 55px 50px 136px;
+}
+
+.testimonials .container .sec__wrap .sec__title {
+  margin-bottom: 0;
+}
+
+.testimonials .container .sec__wrap .sec__title h3 {
+  color: white;
+}
+
+.testimonials .container .sec__wrap .testimonials__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 835px;
+  width: 100%;
+  margin-left: 42px;
+}
+
+.testimonials .container .sec__wrap .testimonials__content .sec__discription {
+  max-width: 624px;
+  width: 100%;
+}
+
+.testimonials .container .sec__wrap .testimonials__content .sec__discription .descr__title {
+  color: white;
+}
+
+.testimonials .container .sec__wrap .testimonials__content .sec__discription .descr__text {
+  color: white;
+}
+
+.testimonials .container .sec__wrap .testimonials__content .testimonials__phpto {
+  text-align: center;
+  font-family: "Myriad Pro", sans-serif;
+}
+
+.testimonials .container .sec__wrap .testimonials__content .testimonials__phpto .photo {
+  width: 127px;
+  height: 127px;
+  margin-bottom: 26px;
+}
+
+.testimonials .container .sec__wrap .testimonials__content .testimonials__phpto h5 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.testimonials .container .sec__wrap .testimonials__content .testimonials__phpto p {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.blog .container .sec__wrap {
+  background: white;
 }

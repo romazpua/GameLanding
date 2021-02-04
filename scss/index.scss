@@ -54,6 +54,7 @@ body {
       font-size: 16px;
     }
   }
+
   .descr__text {
     font-size: 13px;
     color: #595959;
@@ -335,10 +336,12 @@ header {
     .sec__wrap {
       background: white;
       padding: 65px 65px 65px 79px;
-      .sec__discription{
+
+      .sec__discription {
         margin-bottom: 43px;
       }
-      .strategic__items{
+
+      .strategic__items {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -346,26 +349,38 @@ header {
         width: 100%;
         flex-wrap: wrap;
         margin: auto;
-        .strategic__item{
+
+        .strategic__item {
           display: flex;
           align-items: center;
           justify-content: center;
           width: 100%;
-          .item__img{
+
+          .item__img {
             width: 50%;
-            img{
+            overflow: hidden;
+
+            img {
               width: 100%;
+              transition: 4s;
+
+              &:hover {
+                transform: scale(1.05);
+              }
             }
           }
-          .item__text{
+
+          .item__text {
             width: 50%;
             padding: 0 40px;
           }
-          &:nth-child(even){
-            .item__img{
+
+          &:nth-child(even) {
+            .item__img {
               order: 2;
             }
-            .item__text{
+
+            .item__text {
               order: 1;
             }
           }
@@ -374,21 +389,26 @@ header {
     }
   }
 }
-.services{
-  .container{
-    .sec__wrap{
+
+.services {
+  .container {
+    .sec__wrap {
       padding: 41px 184px 58px 50px;
       background: url("../img/sec_bg_services.png") center/cover, url("../img/sec_bg_services2.png") center/cover;
-      .sec__title{
+
+      .sec__title {
         margin-bottom: 55px;
-        h3{
+
+        h3 {
           color: white;
-          span:nth-child(2){
+
+          span:nth-child(2) {
             color: white;
           }
         }
       }
-      .services__items{
+
+      .services__items {
         margin-left: auto;
         color: white;
         font-family: "Myriad Pro", sans-serif;
@@ -397,21 +417,144 @@ header {
         flex-wrap: wrap;
         max-width: 540px;
         width: 100%;
-        .services__item{
+
+        .services__item {
           max-width: 225px;
-          h5{
+
+          h5 {
             font-size: 18px;
             margin-bottom: 26px;
           }
-          p{
+
+          p {
             font-size: 11px;
           }
+
           &:nth-child(1),
-          &:nth-child(2){
+          &:nth-child(2) {
             margin-bottom: 75px;
           }
         }
       }
+    }
+  }
+}
+
+.team {
+  .container {
+    .sec__wrap {
+      background: white;
+      padding: 85px 69px 150px 50px;
+      display: flex;
+      justify-content: space-between;
+
+      .sec__title {
+      }
+
+      .team__content {
+        width: 782px;
+
+        .sec__discription {
+          max-width: 624px;
+          margin-bottom: 35px;
+
+          .descr__title {
+            font-size: 16px;
+          }
+
+          .descr__text {
+            font-size: 14px;
+          }
+        }
+
+        .team__pics {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .team__pic {
+            text-align: center;
+            font-family: "Myriad Pro", sans-serif;
+            margin-bottom: 16px;
+
+            h5 {
+              font-size: 16px;
+              font-weight: 600;
+            }
+
+            p {
+              font-size: 16px;
+              font-style: italic;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.testimonials {
+  .container {
+    .sec__wrap {
+      background: black;
+      color: white;
+      padding: 55px 50px 136px;
+
+      .sec__title {
+        margin-bottom: 0;
+        h3 {
+          color: white;
+        }
+      }
+
+      .testimonials__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 835px;
+        width: 100%;
+        margin-left: 42px;
+
+        .sec__discription {
+          max-width: 624px;
+          width: 100%;
+
+          .descr__title {
+            color: white;
+          }
+
+          .descr__text {
+            color: white;
+          }
+        }
+
+        .testimonials__phpto {
+          text-align: center;
+          font-family: "Myriad Pro", sans-serif;
+          .photo {
+            width: 127px;
+            height: 127px;
+            margin-bottom: 26px;
+          }
+
+          h5 {
+            font-size: 16px;
+            font-weight: 600;
+          }
+
+          p {
+            font-size: 16px;
+            font-style: italic;
+          }
+        }
+      }
+    }
+  }
+}
+.blog{
+  .container{
+    .sec__wrap{
+      background: white;
     }
   }
 }
