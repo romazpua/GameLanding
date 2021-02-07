@@ -61,6 +61,23 @@ body {
   }
 }
 
+#uptotop{
+  display: none;
+  position: fixed;
+  left: 75%;
+  bottom: 20px;
+  cursor: pointer;
+  opacity: 0.6;
+  border-radius: 50%;
+  background: white;
+  img{
+    width: 60px;
+    height: 60px;
+  }
+}
+
+
+
 header {
   background-image: url("../img/bg_img_header.png"), url("../img/bg_col_header.png");
   background-position: center;
@@ -100,7 +117,7 @@ header {
       }
 
       .navigation {
-        background-image: url("../img/bg_img2_header.png");
+        background: url("../img/bg_img2_header.png") center/cover;
         padding: 70px 46px 418px;
 
         h2 {
@@ -502,6 +519,7 @@ header {
 
       .sec__title {
         margin-bottom: 0;
+
         h3 {
           color: white;
         }
@@ -531,6 +549,7 @@ header {
         .testimonials__phpto {
           text-align: center;
           font-family: "Myriad Pro", sans-serif;
+
           .photo {
             width: 127px;
             height: 127px;
@@ -551,10 +570,241 @@ header {
     }
   }
 }
-.blog{
-  .container{
-    .sec__wrap{
+
+.blog {
+  .container {
+    .sec__wrap {
       background: white;
+
+      .blog__nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 58px 115px;
+
+        .sec__title {
+          display: flex;
+          margin-bottom: 0;
+
+          .blog__menu {
+            display: flex;
+
+            ul {
+              align-self: flex-end;
+              font-family: "Myriad Pro", sans-serif;
+              font-size: 18px;
+              margin-top: 100px;
+
+              li {
+                list-style: none;
+
+                &:not(:last-child) {
+                  margin-bottom: 20px;
+                }
+
+                a {
+                  text-decoration: none;
+                  color: #000;
+                  transition: .3s;
+
+                  &:hover {
+                    color: #ffc600;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .blog__items {
+          display: flex;
+          justify-content: space-between;
+          width: 738px;
+
+          .blog__item {
+            max-width: 180px;
+            width: 100%;
+
+            .item__pic {
+              width: 100%;
+
+              img {
+                width: 100%;
+              }
+            }
+
+            .item__date {
+              margin-bottom: 20px;
+
+              h4 {
+                font-family: "Myriad Pro", sans-serif;
+                font-size: 18px;
+                color: #ffc600;
+              }
+            }
+
+            .item__title {
+              margin-bottom: 10px;
+
+              h4 {
+                font-family: "Myriad Pro", sans-serif;
+                font-size: 15px;
+                font-weight: 700;
+              }
+            }
+
+            .item__text {
+              font-family: "Myriad Pro", sans-serif;
+              font-style: italic;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  .container {
+    .sec__wrap {
+      background: #2046b3;
+      display: flex;
+
+      .map {
+        max-width: 42%
+      }
+
+      .contact__form {
+        max-width: 58%;
+        padding: 52px 76px 44px;
+
+        .sec__title {
+          h3 {
+            color: white;
+
+            span {
+              color: #ffc600;
+
+              &:nth-child(2) {
+                color: white;
+              }
+            }
+          }
+        }
+
+        .form {
+          font-family: "Myriad Pro", sans-serif;
+          font-weight: 600;
+          font-size: 16px;
+          width: 412px;
+          text-align: justify;
+          margin-bottom: 62px;
+
+          input {
+            border: 2px solid white;
+            background: transparent;
+            padding: 10px 15px;
+            color: white;
+            margin-bottom: 16px;
+
+            &::placeholder {
+              color: white;
+            }
+
+            &[type='text'] {
+              width: 100%;
+            }
+
+            &[type='tel'] {
+              width: 160px;
+            }
+
+            &[type='email'] {
+              width: 206px;
+              margin-left: auto;
+            }
+          }
+
+          textarea {
+            border: 2px solid white;
+            background: transparent;
+            padding: 10px 15px;
+            color: white;
+            resize: none;
+            width: 100%;
+            margin-bottom: 22px;
+
+            &::placeholder {
+              color: white;
+            }
+          }
+
+          button {
+            a {
+              color: black;
+              text-transform: uppercase;
+              text-decoration: none;
+              width: 108px;
+              height: 33px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background: #ffc600;
+            }
+          }
+        }
+
+        .contacts {
+          margin-bottom: 68px;
+
+          .contact__item {
+            display: flex;
+            color: white;
+            font-family: "Myriad Pro", sans-serif;
+
+            &:not(:last-child) {
+              margin-bottom: 28px;
+            }
+
+            h5 {
+              font-weight: 600;
+              font-size: 16px;
+              min-width: 80px;
+            }
+
+            p {
+              opacity: 0.5;
+              font-family: "Myriad Pro", sans-serif;
+              font-size: 12px;
+            }
+          }
+        }
+
+        .social__links {
+          display: flex;
+          padding: 8px 22px;
+          border-top: 2px solid rgba(255, 255, 255, 0.5);
+
+          a {
+            border-radius: 50%;
+            background: white;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2046b3;
+            &:not(:last-child){
+              margin-right: 5px;
+            }
+
+            img {
+              width: 10px;
+              height: 10px;
+            }
+          }
+        }
+      }
     }
   }
 }

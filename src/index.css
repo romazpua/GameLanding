@@ -59,6 +59,22 @@ body {
   color: #595959;
 }
 
+#uptotop {
+  display: none;
+  position: fixed;
+  left: 75%;
+  bottom: 20px;
+  cursor: pointer;
+  opacity: 0.6;
+  border-radius: 50%;
+  background: white;
+}
+
+#uptotop img {
+  width: 60px;
+  height: 60px;
+}
+
 header {
   background-image: url("../img/bg_img_header.png"), url("../img/bg_col_header.png");
   background-position: center;
@@ -99,7 +115,7 @@ header .container .sec__wrap p span {
 }
 
 header .container .sec__wrap .navigation {
-  background-image: url("../img/bg_img2_header.png");
+  background: url("../img/bg_img2_header.png") center/cover;
   padding: 70px 46px 418px;
 }
 
@@ -603,4 +619,315 @@ header .container .sec__wrap .navigation .menu ul li:not(:last-child) {
 
 .blog .container .sec__wrap {
   background: white;
+}
+
+.blog .container .sec__wrap .blog__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 30px 58px 115px;
+}
+
+.blog .container .sec__wrap .blog__nav .sec__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0;
+}
+
+.blog .container .sec__wrap .blog__nav .sec__title .blog__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog .container .sec__wrap .blog__nav .sec__title .blog__menu ul {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 18px;
+  margin-top: 100px;
+}
+
+.blog .container .sec__wrap .blog__nav .sec__title .blog__menu ul li {
+  list-style: none;
+}
+
+.blog .container .sec__wrap .blog__nav .sec__title .blog__menu ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.blog .container .sec__wrap .blog__nav .sec__title .blog__menu ul li a {
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.blog .container .sec__wrap .blog__nav .sec__title .blog__menu ul li a:hover {
+  color: #ffc600;
+}
+
+.blog .container .sec__wrap .blog__nav .blog__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 738px;
+}
+
+.blog .container .sec__wrap .blog__nav .blog__items .blog__item {
+  max-width: 180px;
+  width: 100%;
+}
+
+.blog .container .sec__wrap .blog__nav .blog__items .blog__item .item__pic {
+  width: 100%;
+}
+
+.blog .container .sec__wrap .blog__nav .blog__items .blog__item .item__pic img {
+  width: 100%;
+}
+
+.blog .container .sec__wrap .blog__nav .blog__items .blog__item .item__date {
+  margin-bottom: 20px;
+}
+
+.blog .container .sec__wrap .blog__nav .blog__items .blog__item .item__date h4 {
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 18px;
+  color: #ffc600;
+}
+
+.blog .container .sec__wrap .blog__nav .blog__items .blog__item .item__title {
+  margin-bottom: 10px;
+}
+
+.blog .container .sec__wrap .blog__nav .blog__items .blog__item .item__title h4 {
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.blog .container .sec__wrap .blog__nav .blog__items .blog__item .item__text {
+  font-family: "Myriad Pro", sans-serif;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.contact .container .sec__wrap {
+  background: #2046b3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact .container .sec__wrap .map {
+  max-width: 42%;
+}
+
+.contact .container .sec__wrap .contact__form {
+  max-width: 58%;
+  padding: 52px 76px 44px;
+}
+
+.contact .container .sec__wrap .contact__form .sec__title h3 {
+  color: white;
+}
+
+.contact .container .sec__wrap .contact__form .sec__title h3 span {
+  color: #ffc600;
+}
+
+.contact .container .sec__wrap .contact__form .sec__title h3 span:nth-child(2) {
+  color: white;
+}
+
+.contact .container .sec__wrap .contact__form .form {
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  width: 412px;
+  text-align: justify;
+  margin-bottom: 62px;
+}
+
+.contact .container .sec__wrap .contact__form .form input {
+  border: 2px solid white;
+  background: transparent;
+  padding: 10px 15px;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.contact .container .sec__wrap .contact__form .form input::-webkit-input-placeholder {
+  color: white;
+}
+
+.contact .container .sec__wrap .contact__form .form input::-moz-placeholder {
+  color: white;
+}
+
+.contact .container .sec__wrap .contact__form .form input:-ms-input-placeholder {
+  color: white;
+}
+
+.contact .container .sec__wrap .contact__form .form input::-ms-input-placeholder {
+  color: white;
+}
+
+undefined {
+  color: white;
+}
+
+undefined {
+  color: white;
+}
+
+undefined {
+  color: white;
+}
+
+.contact .container .sec__wrap .contact__form .form input::placeholder {
+  color: white;
+}
+
+.contact .container .sec__wrap .contact__form .form input[type='text'] {
+  width: 100%;
+}
+
+.contact .container .sec__wrap .contact__form .form input[type='tel'] {
+  width: 160px;
+}
+
+.contact .container .sec__wrap .contact__form .form input[type='email'] {
+  width: 206px;
+  margin-left: auto;
+}
+
+.contact .container .sec__wrap .contact__form .form textarea {
+  border: 2px solid white;
+  background: transparent;
+  padding: 10px 15px;
+  color: white;
+  resize: none;
+  width: 100%;
+  margin-bottom: 22px;
+}
+
+.contact .container .sec__wrap .contact__form .form textarea::-webkit-input-placeholder {
+  color: white;
+}
+
+.contact .container .sec__wrap .contact__form .form textarea::-moz-placeholder {
+  color: white;
+}
+
+.contact .container .sec__wrap .contact__form .form textarea:-ms-input-placeholder {
+  color: white;
+}
+
+.contact .container .sec__wrap .contact__form .form textarea::-ms-input-placeholder {
+  color: white;
+}
+
+undefined {
+  color: white;
+}
+
+undefined {
+  color: white;
+}
+
+undefined {
+  color: white;
+}
+
+.contact .container .sec__wrap .contact__form .form textarea::placeholder {
+  color: white;
+}
+
+.contact .container .sec__wrap .contact__form .form button a {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 108px;
+  height: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #ffc600;
+}
+
+.contact .container .sec__wrap .contact__form .contacts {
+  margin-bottom: 68px;
+}
+
+.contact .container .sec__wrap .contact__form .contacts .contact__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-family: "Myriad Pro", sans-serif;
+}
+
+.contact .container .sec__wrap .contact__form .contacts .contact__item:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+.contact .container .sec__wrap .contact__form .contacts .contact__item h5 {
+  font-weight: 600;
+  font-size: 16px;
+  min-width: 80px;
+}
+
+.contact .container .sec__wrap .contact__form .contacts .contact__item p {
+  opacity: 0.5;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 12px;
+}
+
+.contact .container .sec__wrap .contact__form .social__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px 22px;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.contact .container .sec__wrap .contact__form .social__links a {
+  border-radius: 50%;
+  background: white;
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #2046b3;
+}
+
+.contact .container .sec__wrap .contact__form .social__links a:not(:last-child) {
+  margin-right: 5px;
+}
+
+.contact .container .sec__wrap .contact__form .social__links a img {
+  width: 10px;
+  height: 10px;
 }
